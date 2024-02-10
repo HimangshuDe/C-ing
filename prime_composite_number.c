@@ -11,15 +11,15 @@ int main(){
         printf("The number is neither prime nor composite.");
     }
     else{
-        for (int i=2; i <= (user_num/2); i++){
+        for (int i=2; i <= user_num; i++){
             
-            if (user_num %i ==0)
+            if (user_num %i ==0 && user_num != i)
             { 
                 printf("%d is a composite number.", user_num);
                 break;
             }
             
-            if(i == (user_num/2) && user_num %i != 0){
+            if(i == user_num && user_num %i == 0){
                 printf("%d is a prime number.", user_num);
                 break;
             }
