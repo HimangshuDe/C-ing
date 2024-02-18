@@ -53,6 +53,11 @@ dkms.conf
 
 # VS Code Configuration files
 .vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
 # Some of my personal temp program files
 *_test.c
